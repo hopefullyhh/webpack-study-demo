@@ -98,8 +98,7 @@ module.exports = function (env, argv) {
               },
             },
           ],
-          exclude: (file) =>
-            /node_modules/.test(file) && !/\.vue\.js/.test(file),
+          exclude: (file) => /node_modules/.test(file) && !/\.vue\.js/.test(file),
         },
         {
           test: /\.ts$/,
@@ -124,9 +123,7 @@ module.exports = function (env, argv) {
       }),
       new DefinePlugin({
         "process.env": {
-          NODE_ENV: JSON.stringify(
-            env.production ? "production" : "development",
-          ),
+          NODE_ENV: JSON.stringify(env.production ? "production" : "development"),
           BASE_URL: JSON.stringify("/"),
         },
       }),
@@ -162,10 +159,7 @@ module.exports = function (env, argv) {
         failOnError: false,
         failOnWarning: false,
         cache: true,
-        cacheLocation: path.resolve(
-          __dirname,
-          "node_modules/.cache/eslintcache",
-        ),
+        cacheLocation: path.resolve(__dirname, "node_modules/.cache/eslintcache"),
       }),
     ],
     optimization: {
