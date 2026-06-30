@@ -1,0 +1,67 @@
+{
+  "name": "webpack-study-demo",
+  "version": "1.0.0",
+  "description": "webpack学习demo",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx webpack build --env production --config ./webpack.prod.js",
+    "dev": "npx webpack serve --open --env development --config ./webpack.dev.js",
+    "lint": "eslint --ext .js,.ts,.vue src"
+  },
+  "keywords": [
+    "webpack",
+    "study",
+    "demo"
+  ],
+  "author": "林海听风语",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@eslint/js": "^10.0.1",
+    "@types/lodash": "~4.17.24",
+    "@typescript-eslint/eslint-plugin": "^8.62.1",
+    "@typescript-eslint/parser": "^8.62.1",
+    "autoprefixer": "^10.5.1",
+    "babel-loader": "^10.0.0",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "copy-webpack-plugin": "^14.0.0",
+    "css-loader": "^7.1.4",
+    "cssnano": "^8.0.2",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-vue": "^10.9.2",
+    "eslint-webpack-plugin": "^6.0.0",
+    "fork-ts-checker-webpack-plugin": "^9.1.0",
+    "globals": "^17.7.0",
+    "html-webpack-plugin": "^5.6.7",
+    "less": "^4.6.7",
+    "less-loader": "^13.0.0",
+    "mini-css-extract-plugin": "^2.10.2",
+    "minimizer-webpack-plugin": "^5.6.1",
+    "postcss-loader": "^8.2.1",
+    "sass": "^1.101.0",
+    "sass-loader": "^17.0.0",
+    "style-loader": "^4.0.0",
+    "stylus": "^0.64.0",
+    "stylus-loader": "^9.0.0",
+    "ts-loader": "^9.6.0",
+    "vue-loader": "^15.10.0",
+    "vue-style-loader": "^4.1.3",
+    "vue-template-compiler": "^2.7.16",
+    "webpack": "^5.102.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.5"
+  },
+  "dependencies": {
+    "core-js": "^3.49.0",
+    "lodash": "^4.17.23",
+    "vue": "^2.7.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
